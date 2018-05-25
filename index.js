@@ -22,14 +22,50 @@ var app = new Vue({
       message:'Hello Vue',
       example:['one','two','three'],  
       example1:['monkey','cat','dog'],
-      elligators: gators
-    },
+      alligators: gators
+    },  
     methods:{
         test:function(){
             console.log("test was called")
         },
         filter:function(){
             console.log("filter was called")
+            // if check box is checked
+            if(document.getElementById("icecream").checked){
+               //set this. alligator to only likesIceCream === true 
+            //    this.alligators = gators 
+            console.log("true")
+               this.alligators = gators.filter(gator => gator.likesIceCream);
+                //        for(var i in gators){
+                    
+                //        //gators[i].likesIceCream = false;
+                //        console.log(gators[i]);
+                //    };
+            }else{
+              //else
+              console.log("else")
+               this.alligators = gators 
+            //    for(var i in gators){
+            //        console.log(gators[i]);
+            //        gators[i].likesIceCream = true;
+            //        console.log(gators[i]);
+            //    }
+            }  
+           
+        },
+        sortAsc:function(){
+            console.log("sort clicked");            
+            this.alligators = gators.sort(function(a, b){return a.weight -b.weight});
+            if(document.getElementById("icecream").checked){
+                this.alligators = gators.filter(gator => gator.likesIceCream);               
+              }
+        },
+        sortDesc:function(){
+            console.log("sort clicked")           
+           this.alligators = gators.sort(function(a, b){return b.weight - a.weight});
+           if(document.getElementById("icecream").checked){
+            this.alligators = gators.filter(gator => gator.likesIceCream);               
+        }
         }
     }
   });

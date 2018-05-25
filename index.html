@@ -28,16 +28,20 @@
         </p>
       <div class="filters">
         <label>
-          <input v-on:change="filter()" type="checkbox" name="icecream">
+          <input v-on:change="filter()" type="checkbox" id="icecream">
           Only show alligators that like ice cream
         </label>
         <button v-on:click="test()">Click Me!</button>
+        <br>
+        <button v-on:click="sortAsc()">Sort by Weight Aces</button>
+        <br>
+        <button v-on:click="sortDesc()">Sor by Weith Desc</botton>
       </div>
       <!-- <div  class="profile">
           {{ elligators }}
       </div>       -->
       <section class="profile-container">
-        <div v-for="gator in elligators" class="profile">
+        <div v-for="gator in alligators" class="profile">
           <!-- <h3>Wanda Snapson</h3> -->
           <h3>{{ gator.name }}</h3>
           <!-- <img src="http://www.vaguebuttrue.com/images/1449775760-alligatorclimbsfenceWEBSITE.jpg" alt="Wanda Snapson">
