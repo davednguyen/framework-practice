@@ -18,22 +18,33 @@
         
         </h1>
       </header>
-
+      <p v-for="item in example">
+        {{ item }}
+      </p>
+      <p v-for="item in example1">
+          {{ item }}
+        </p>
       <div class="filters">
         <label>
           <input type="checkbox" name="icecream">
           Only show alligators that like ice cream
         </label>
       </div>
-
+      <!-- <div  class="profile">
+          {{ elligators }}
+      </div>       -->
       <section class="profile-container">
-        <div class="profile">
-          <h3>Wanda Snapson</h3>
-          <img src="http://www.vaguebuttrue.com/images/1449775760-alligatorclimbsfenceWEBSITE.jpg" alt="Wanda Snapson">
-          <p>Hobbies include having parties.</p>
+        <div v-for="gator in elligators" class="profile">
+          <!-- <h3>Wanda Snapson</h3> -->
+          <h3>{{ gator.name }}</h3>
+          <!-- <img src="http://www.vaguebuttrue.com/images/1449775760-alligatorclimbsfenceWEBSITE.jpg" alt="Wanda Snapson">
+           -->
+           <img :src="gator.imgSource" :alt="gator.name">
+          <!-- <p>Hobbies include having parties.</p> -->
+          <p>Hobbies include {{ gator.hobbies }}.</p>
         </div>
 
-        <div class="profile">
+        <!-- <div class="profile">
           <h3>Elvis Vessley</h3>
           <img src="https://img-aws.ehowcdn.com/877x500p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/10c413dcc4d444acbd6810f483028933" alt="Elvis Vessley">
           <p>Hobbies include surfing, dancing.</p>
@@ -43,7 +54,7 @@
           <h3>Little Britches</h3>
           <img src="http://nebula.wsimg.com/5df260927e75521ad0f18fae842e522e?AccessKeyId=00569247111AAAE64481&disposition=0&alloworigin=1" alt="Little Britches">
           <p>Hobbies include shaking, eating fruit.</p>
-        </div>
+        </div> -->
       </section>    
     </div>
       <script src="script.js"></script>

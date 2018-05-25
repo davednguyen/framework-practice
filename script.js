@@ -20,6 +20,9 @@ var gators = [
 var app = new Vue({
   el:'#app',
   data:{
-    message:'Hello Vue'
+    message:'Hello Vue',
+    example:['one','two','three'],  
+    example1:['monkey','cat','dog'],
+    elligators: gators
   }
 });
