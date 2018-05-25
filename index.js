@@ -27,6 +27,9 @@ var app = new Vue({
     methods:{
         test:function(){
             console.log("test was called")
+        },
+        filter:function(){
+            console.log("filter was called")
         }
     }
   });
