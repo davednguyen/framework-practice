@@ -23,5 +23,10 @@ var app = new Vue({
       example:['one','two','three'],  
       example1:['monkey','cat','dog'],
       elligators: gators
+    },
+    methods:{
+        test:function(){
+            console.log("test was called")
+        }
     }
   });
