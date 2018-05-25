@@ -1,46 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Alligators To Know</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Alligators To Know</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <!-- production version, optimized for size and speed -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+      
+    </head>
+    <body> 
+        <div id="app">     
+      <header>
+        <h1>
+          <img src="alligator-logo.png" alt="Alligator Logo">
+          
+          My Favorite Alligators {{message}}
+        
+        </h1>
+      </header>
 
-  <script src="script.js"></script>
-</head>
-<body>
-  <header>
-    <h1>
-      <img src="alligator-logo.png" alt="Alligator Logo">
-      My Favorite Alligators
-    </h1>
-  </header>
+      <div class="filters">
+        <label>
+          <input type="checkbox" name="icecream">
+          Only show alligators that like ice cream
+        </label>
+      </div>
 
-  <div class="filters">
-    <label>
-      <input type="checkbox" name="icecream">
-      Only show alligators that like ice cream
-    </label>
-  </div>
+      <section class="profile-container">
+        <div class="profile">
+          <h3>Wanda Snapson</h3>
+          <img src="http://www.vaguebuttrue.com/images/1449775760-alligatorclimbsfenceWEBSITE.jpg" alt="Wanda Snapson">
+          <p>Hobbies include having parties.</p>
+        </div>
 
-  <section class="profile-container">
-    <div class="profile">
-      <h3>Wanda Snapson</h3>
-      <img src="http://www.vaguebuttrue.com/images/1449775760-alligatorclimbsfenceWEBSITE.jpg" alt="Wanda Snapson">
-      <p>Hobbies include having parties.</p>
+        <div class="profile">
+          <h3>Elvis Vessley</h3>
+          <img src="https://img-aws.ehowcdn.com/877x500p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/10c413dcc4d444acbd6810f483028933" alt="Elvis Vessley">
+          <p>Hobbies include surfing, dancing.</p>
+        </div>
+
+        <div class="profile">
+          <h3>Little Britches</h3>
+          <img src="http://nebula.wsimg.com/5df260927e75521ad0f18fae842e522e?AccessKeyId=00569247111AAAE64481&disposition=0&alloworigin=1" alt="Little Britches">
+          <p>Hobbies include shaking, eating fruit.</p>
+        </div>
+      </section>    
     </div>
-
-    <div class="profile">
-      <h3>Elvis Vessley</h3>
-      <img src="https://img-aws.ehowcdn.com/877x500p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/10c413dcc4d444acbd6810f483028933" alt="Elvis Vessley">
-      <p>Hobbies include surfing, dancing.</p>
-    </div>
-
-    <div class="profile">
-      <h3>Little Britches</h3>
-      <img src="http://nebula.wsimg.com/5df260927e75521ad0f18fae842e522e?AccessKeyId=00569247111AAAE64481&disposition=0&alloworigin=1" alt="Little Britches">
-      <p>Hobbies include shaking, eating fruit.</p>
-    </div>
-  </section>
-
-</body>
-</html>
+      <script src="script.js"></script>
+    </body>
+    </html>
