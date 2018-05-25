@@ -17,10 +17,10 @@ var gators = [
   }
 ]
 
-Vue.component('app-header',{
-  props:['text'],
-  template:'<header><h1><img src="alligator-logo.png" alt="logo"> {{text }}</h1></header>'
-});
+// Vue.component('app-header',{
+//   props:['text'],
+//   template:'<header><h1><img src="alligator-logo.png" alt="logo"> {{text }}</h1></header>'
+// });
 
 var app = new Vue({
   el:'#app',
@@ -30,5 +30,10 @@ var app = new Vue({
     example1:['monkey','cat','dog'],
     elligators: gators
   }
+});
+
+var aboutApp = new Vue({
+  el:'#about-app',
+  data:{}
 });
 

@@ -5,8 +5,8 @@
       <title>Alligators To Know</title>
       <link rel="stylesheet" type="text/css" href="styles.css">
       <!-- production version, optimized for size and speed -->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-      
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="component.js"></script>
     </head>
     <body> 
         <div id="app">     
@@ -15,10 +15,11 @@
           <img src="alligator-logo.png" alt="Alligator Logo">
           
           My Favorite Alligators {{message}}
-        
+ 
         </h1> -->
+        <!-- </header> -->
         <app-header text="my Favorite alligators"></app-header>
-      </header>
+      
       <p v-for="item in example">
         {{ item }}
       </p>
@@ -58,6 +59,6 @@
         </div> -->
       </section>    
     </div>
-      <script src="script.js"></script>
+      <script src="index.js"></script>
     </body>
     </html>
